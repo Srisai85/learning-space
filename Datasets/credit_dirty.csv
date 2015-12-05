@@ -1,29 +1,4 @@
-@relation german_credit
-
-@attribute checking_status {<0,0<=X<200,>=200,'no checking'}
-@attribute duration numeric
-@attribute credit_history {'no credits/all paid','all paid','existing paid','delayed previously','critical/other existing credit'}
-@attribute purpose {'new car','used car',furniture/equipment,radio/tv,'domestic appliance',repairs,education,vacation,retraining,business,other}
-@attribute credit_amount numeric
-@attribute savings_status {<100,100<=X<500,500<=X<1000,>=1000,'no known savings'}
-@attribute employment {unemployed,<1,1<=X<4,4<=X<7,>=7}
-@attribute installment_commitment numeric
-@attribute personal_status {'male div/sep','female div/dep/mar','male single','male mar/wid','female single'}
-@attribute other_parties {none,'co applicant',guarantor}
-@attribute residence_since numeric
-@attribute property_magnitude {'real estate','life insurance',car,'no known property'}
-@attribute age numeric
-@attribute other_payment_plans {bank,stores,none}
-@attribute housing {rent,own,'for free'}
-@attribute existing_credits numeric
-@attribute job {'unemp/unskilled non res','unskilled resident',skilled,'high qualif/self emp/mgmt'}
-@attribute num_dependents numeric
-@attribute own_telephone {none,yes}
-@attribute foreign_worker {yes,no}
-@attribute class {good,bad}
-
-@data
-
+checking_status,duration,credit_history,purpose,credit_amount,savings_status ,employment,installment_commitment,personal_status,other_parties,residence_since,property_magnitude,age,other_payment_plans,housing,existing_credits,job,num_dependents,own_telephone,foreign_worker,class
 <0,6,'critical/other existing credit',radio/tv,1169,'no known savings',>=7,4,'male single',none,4,'real estate',67,none,own,2,skilled,1,yes,yes,good
 0<=X<200,48,'existing paid',radio/tv,5951,<100,1<=X<4,2,'female div/dep/mar',none,2,'real estate',22,none,own,1,skilled,1,none,yes,bad
 'no checking',12,'critical/other existing credit',education,2096,<100,4<=X<7,2,'male single',none,3,'real estate',49,none,own,1,'unskilled resident',2,none,yes,good
